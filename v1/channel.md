@@ -2,8 +2,8 @@
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /channel/ping](/v1/api/channel.md#ping) | Prepare server for capturing a stream |
-| [POST /channel/capture](/v1/api/channel.md#capture) | Take capture of a live stream |
+| [POST /channel/ping](/v1/channel.md#ping) | Prepare server for capturing a stream |
+| [POST /channel/capture](/v1/channel.md#capture) | Take capture of a live stream |
 
 ## `POST /channel/ping`
 

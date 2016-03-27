@@ -2,7 +2,7 @@
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /captures](/v1/api/capture.md#list-captures) | Get list of captures |
+| [GET /captures](/v1/capture.md#list-captures) | Get list of captures |
 
 ## `GET /captures`
 

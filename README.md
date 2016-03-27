@@ -13,18 +13,18 @@ https://api.livecap.tv/v1/ (Still under development. Not published yet)
 
 ## API Index
 
-### [Captures](/v1/api/capture.md)
+### [Captures](/v1/capture.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /captures](/v1/api/capture.md#list-captures) | Get list of captures |
+| [GET /captures](/v1/capture.md#list-captures) | Get list of captures |
 
-### [Channels](/v1/api/channel.md)
+### [Channels](/v1/channel.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /channel/ping](/v1/api/channel.md#ping) | Prepare server for capturing a stream |
-| [POST /channel/capture](/v1/api/channel.md#capture) | Take capture of a live stream |
+| [POST /channel/ping](/v1/channel.md#ping) | Prepare server for capturing a stream |
+| [POST /channel/capture](/v1/channel.md#capture) | Take capture of a live stream |
 
 
 
