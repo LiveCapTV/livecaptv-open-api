@@ -36,6 +36,32 @@ Notify server of getting prepared for taking a capture. If there are no PING req
     </tbody>
 </table>
 
+### Response Handling
+
+Possible server response values include:
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>status</code></td>
+            <td>string</td>
+            <td>Status of capture service. Choices: <code>ok, not_available</code></td>
+        </tr>
+        <tr>
+            <td><code>nextPing</code></td>
+            <td>number</td>
+            <td>Number of seconds that is suggested for the client to wait before sending another ping request.</td>
+        </tr>
+    </tbody>
+</table>
+
 ### Example Request
 
 ```bash
@@ -49,7 +75,8 @@ curl -XPOST -i -H 'Accept: application/json'\
 
 ```json
 {
-	"status": "ok"
+	"status": "ok",
+    "nextPing": 5
 }
 ```
 
@@ -93,11 +120,23 @@ curl -XPOST -i -H 'Accept: application/json'\
 'https://api.livecap.tv/v1/channel/capture' 
 ```
 
-### Example Response
+### Example Response (Request succeeded)
 
 ```json
 {
 	"status": "ok",
-	"shareURL": "https://www.livecap.tv/t/riotgames/uLMjA0PqyDe"
+    "capture": {
+        "id": "uLMjA0PqyDe",
+        "shareURL": "https://www.livecap.tv/t/riotgames/uLMjA0PqyDe"
+    }
+}
+```
+
+### Example Response (Request failed)
+
+```json
+{
+    "status": "error",
+    "message": "Server does not feel like taking a capture today."
 }
 ```

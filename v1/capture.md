@@ -24,25 +24,25 @@ Returns a list of Capture object
             <td><code>platform</code></td>
             <td>optional</td>
             <td>string</td>
-            <td>Name of live stream platform. Should be used together with `channel` parameter. Choices: <code>twitch</code></td>
+            <td>Name of live stream platform. Should be used together with <code>channel</code> parameter. Choices: <code>twitch</code></td>
         </tr>
         <tr>
             <td><code>channel</code></td>
             <td>optional</td>
             <td>string</td>
-            <td>Name of live stream channel. Should be used together with `platform` parameter. For Twitch channels, this string would be the same as in <code>https://twitch.tv/***</code></td>
+            <td>Name of live stream channel. Should be used together with <code>platform</code> parameter. For Twitch channels, this string would be the same as in <code>https://twitch.tv/***</code></td>
         </tr>
         <tr>
             <td><code>ts_start</code></td>
             <td>optional</td>
             <td>number</td>
-            <td>Timestamp in milliseconds. When this param is included in the request, only captures taken **after** this timestamp will be included in the result.</td>
+            <td>Timestamp in milliseconds. When this param is included in the request, only captures taken <b>after</b> this timestamp will be included in the result.</td>
         </tr>
         <tr>
             <td><code>ts_end</code></td>
             <td>optional</td>
             <td>number</td>
-            <td>Timestamp in milliseconds. When this param is included in the request, only captures taken **before** this timestamp will be included in the result.</td>
+            <td>Timestamp in milliseconds. When this param is included in the request, only captures taken <b>before</b> this timestamp will be included in the result.</td>
         </tr>
         <tr>
             <td><code>limit</code></td>
