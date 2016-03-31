@@ -143,7 +143,7 @@ curl -XPOST -i -H 'Accept: application/json'\
         },
         "preview": {
             
-        }
+        },
         "channel": {
             "platform": "twitch",
             "name": "riotgames"

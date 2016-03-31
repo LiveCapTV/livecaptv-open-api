@@ -39,11 +39,12 @@ Note that all requests to our endpoints should be sent via HTTPS to avoid token 
 
 ## API Index
 
-### [Query Captures](/v1/capture.md)
+### [Query Captures Data](/v1/capture.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /v1/captures](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/capture](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/capture/:captureID](/v1/capture.md#get-capture) | Get details of a capture |
 
 ### [Take Captures of Live Streams](/v1/stream.md)
 

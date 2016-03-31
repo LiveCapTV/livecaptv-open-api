@@ -1,11 +1,11 @@
-# Captures
+# Capture
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /v1/captures](/v1/capture.md#list-captures) | Get list of captures |
-| [GET /v1/captures/:captureID](/v1/capture.md#get-capture) | Get details of a capture |
+| [GET /v1/capture](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/capture/:captureID](/v1/capture.md#get-capture) | Get details of a capture |
 
-## `GET /v1/captures`
+## `GET /v1/capture`
 
 Returns a list of Capture objects
 
@@ -70,7 +70,7 @@ Returns a list of Capture objects
 
 ```bash
 curl -H 'Accept: application/json' \
--X GET https://api.livecap.tv/v1/captures?platform=twitch&channel=riotgames
+-X GET https://api.livecap.tv/v1/capture?platform=twitch&channel=riotgames
 ```
 
 ### Example Response
@@ -99,7 +99,7 @@ curl -H 'Accept: application/json' \
             "URL": "http://dxm2idf2u6bml.cloudfront.net/rest/serve/THUMBNAILS/d1256087-5f36-4278-91b0-fc2814d54648.jpg",
             "thumbnailURL": "http://dxm2idf2u6bml.cloudfront.net/rest/serve/THUMBNAILS/d1256087-5f36-4278-91b0-fc2814d54648.jpg?width=350",
             "color": "#bcb29e",
-        }
+        },
         "channel": {
             "platform": "twitch",
             "name": "riotgames"
@@ -109,5 +109,73 @@ curl -H 'Accept: application/json' \
         }
     }
 ]   
+```
+
+## `GET /v1/capture/:captureID`
+
+Get details of a Capture object
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>captureID</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>ID if the Capture object</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Request
+
+```bash
+curl -H 'Accept: application/json' \
+-X GET https://api.livecap.tv/v1/capture/uLMjA0PqyDe
+```
+
+### Example Response
+
+```json
+{  
+    "id":"uLMjA0PqyDe",
+    "title":"LCK Spring - Week 1 Day 4",
+    "status": "published",
+    "created":1452934202922,
+    "views":54689,
+    "upvotes":2,
+    "shareURL":"http://www.livecap.tv/t/riotgames/uLMjA0PqyDe",
+    "author":{  
+      "name":"tlyee",
+      "displayName":"tlyee",
+      "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg"
+    },
+    "video": {
+        "high": "http://d1qugqs02rnrk6.cloudfront.net/f1fad403-f7f0-4cee-83a5-80f2a6446c84.mp4",
+        "medium": "http://d1qugqs02rnrk6.cloudfront.net/ff14ec4c-8b67-47ee-b4a6-9849646372e2.mp4",
+        "low": "http://d1qugqs02rnrk6.cloudfront.net/e693c337-b3f5-4eb7-876d-751e993484ed.mp4"
+    },
+    "preview": {
+        "URL": "http://dxm2idf2u6bml.cloudfront.net/rest/serve/THUMBNAILS/d1256087-5f36-4278-91b0-fc2814d54648.jpg",
+        "thumbnailURL": "http://dxm2idf2u6bml.cloudfront.net/rest/serve/THUMBNAILS/d1256087-5f36-4278-91b0-fc2814d54648.jpg?width=350",
+        "color": "#bcb29e",
+    },
+    "channel": {
+        "platform": "twitch",
+        "name": "riotgames"
+    },
+    "game": {
+        "name": "League of Legends"
+    }
+}   
 ```
 
