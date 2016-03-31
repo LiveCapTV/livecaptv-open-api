@@ -1,11 +1,11 @@
-# Channel
+# Take Captures of Live Streams
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /channel/ping](/v1/channel.md#ping) | Prepare server for capturing a stream |
-| [POST /channel/capture](/v1/channel.md#capture) | Take capture of a live stream |
+| [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for taking captures of a live stream |
+| [POST /v1/stream/capture](/v1/stream.md#capture) | Take capture of a live stream |
 
-## `POST /channel/ping`
+## `POST /v1/stream/ping`
 
 Notify server of getting prepared for taking a capture. If there are no PING requests for a live stream in 5 minutes, capturing resources for this live stream may get recycled.
 
@@ -68,7 +68,7 @@ Possible server response values include:
 curl -XPOST -i -H 'Accept: application/json'\
 -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
 -d "platform=twitch&channel=riotgames" \
-'https://api.livecap.tv/v1/channel/ping' 
+'https://api.livecap.tv/v1/stream/ping' 
 ```
 
 ### Example Response
@@ -80,7 +80,7 @@ curl -XPOST -i -H 'Accept: application/json'\
 }
 ```
 
-## `POST /channel/capture`
+## `POST /v1/stream/capture`
 
 Take capture of a live stream
 
@@ -117,7 +117,7 @@ Take capture of a live stream
 curl -XPOST -i -H 'Accept: application/json'\
 -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
 -d "platform=twitch&channel=riotgames" \
-'https://api.livecap.tv/v1/channel/capture' 
+'https://api.livecap.tv/v1/stream/capture' 
 ```
 
 ### Example Response (Request succeeded)
@@ -125,9 +125,32 @@ curl -XPOST -i -H 'Accept: application/json'\
 ```json
 {
 	"status": "ok",
-    "capture": {
-        "id": "uLMjA0PqyDe",
-        "shareURL": "https://www.livecap.tv/t/riotgames/uLMjA0PqyDe"
+    "capture": {  
+        "id":"uLMjA0PqyDe",
+        "title":"LCK Spring - Week 1 Day 4",
+        "status": "draft",
+        "created":1452934202922,
+        "views":0,
+        "upvotes":0,
+        "shareURL":"http://www.livecap.tv/t/riotgames/uLMjA0PqyDe",
+        "author":{  
+          "name":"tlyee",
+          "displayName":"tlyee",
+          "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg"
+        },
+        "video": {
+
+        },
+        "preview": {
+            
+        }
+        "channel": {
+            "platform": "twitch",
+            "name": "riotgames"
+        },
+        "game": {
+            "name": "League of Legends"
+        }
     }
 }
 ```

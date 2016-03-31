@@ -2,11 +2,12 @@
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /captures](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/captures](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/captures/:captureID](/v1/capture.md#get-capture) | Get details of a capture |
 
-## `GET /captures`
+## `GET /v1/captures`
 
-Returns a list of Capture object
+Returns a list of Capture objects
 
 ### Parameters
 
@@ -69,18 +70,44 @@ Returns a list of Capture object
 
 ```bash
 curl -H 'Accept: application/json' \
--X GET https://api.livecap.tv/captures
+-X GET https://api.livecap.tv/v1/captures?platform=twitch&channel=riotgames
 ```
 
 ### Example Response
 
 ```json
-{
-	"captures": [
-		{
-			"id": "TBD"
-		}
-	]	
-}
+[
+    {  
+        "id":"uLMjA0PqyDe",
+        "title":"LCK Spring - Week 1 Day 4",
+        "status": "published",
+        "created":1452934202922,
+        "views":54689,
+        "upvotes":2,
+        "shareURL":"http://www.livecap.tv/t/riotgames/uLMjA0PqyDe",
+        "author":{  
+          "name":"tlyee",
+          "displayName":"tlyee",
+          "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg"
+        },
+        "video": {
+            "high": "http://d1qugqs02rnrk6.cloudfront.net/f1fad403-f7f0-4cee-83a5-80f2a6446c84.mp4",
+            "medium": "http://d1qugqs02rnrk6.cloudfront.net/ff14ec4c-8b67-47ee-b4a6-9849646372e2.mp4",
+            "low": "http://d1qugqs02rnrk6.cloudfront.net/e693c337-b3f5-4eb7-876d-751e993484ed.mp4"
+        },
+        "preview": {
+            "URL": "http://dxm2idf2u6bml.cloudfront.net/rest/serve/THUMBNAILS/d1256087-5f36-4278-91b0-fc2814d54648.jpg",
+            "thumbnailURL": "http://dxm2idf2u6bml.cloudfront.net/rest/serve/THUMBNAILS/d1256087-5f36-4278-91b0-fc2814d54648.jpg?width=350",
+            "color": "#bcb29e",
+        }
+        "channel": {
+            "platform": "twitch",
+            "name": "riotgames"
+        },
+        "game": {
+            "name": "League of Legends"
+        }
+    }
+]   
 ```
 

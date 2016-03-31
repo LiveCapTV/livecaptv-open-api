@@ -39,18 +39,18 @@ Note that all requests to our endpoints should be sent via HTTPS to avoid token 
 
 ## API Index
 
-### [Captures](/v1/capture.md)
+### [Query Captures](/v1/capture.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /captures](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/captures](/v1/capture.md#list-captures) | Get list of captures |
 
-### [Channels](/v1/channel.md)
+### [Take Captures of Live Streams](/v1/stream.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /channel/ping](/v1/channel.md#ping) | Prepare server for capturing a stream |
-| [POST /channel/capture](/v1/channel.md#capture) | Take capture of a live stream |
+| [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for taking captures of a live stream |
+| [POST /v1/stream/capture](/v1/stream.md#capture) | Take capture of a live stream |
 
 ## Limitations
 
