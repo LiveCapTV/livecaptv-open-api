@@ -2,12 +2,12 @@
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for taking captures of a live stream |
-| [POST /v1/stream/capture](/v1/stream.md#capture) | Take capture of a live stream |
+| [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for capping of a live stream |
+| [POST /v1/stream/cap](/v1/stream.md#cap) | Capa live stream |
 
 ## `POST /v1/stream/ping`
 
-Notify server of getting prepared for taking a capture. If there are no PING requests for a live stream in 5 minutes, capturing resources for this live stream may get recycled.
+Notify server of getting prepared for capping. If there are no PING requests for a live stream in 5 minutes, capturing resources for this live stream may get recycled.
 
 ### Parameters
 
@@ -125,7 +125,7 @@ curl -XPOST -i -H 'Accept: application/json'\
 ```json
 {
 	"status": "ok",
-    "capture": {  
+    "video": {  
         "id":"uLMjA0PqyDe",
         "title":"LCK Spring - Week 1 Day 4",
         "status": "draft",
@@ -160,6 +160,6 @@ curl -XPOST -i -H 'Accept: application/json'\
 ```json
 {
     "status": "error",
-    "message": "Server does not feel like taking a capture today."
+    "message": "Server does not feel like taking a cap today."
 }
 ```

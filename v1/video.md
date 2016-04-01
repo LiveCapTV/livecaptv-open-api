@@ -1,13 +1,13 @@
-# Capture
+# Video
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /v1/capture](/v1/capture.md#list-captures) | Get list of captures |
-| [GET /v1/capture/:captureID](/v1/capture.md#get-capture) | Get details of a capture |
+| [GET /v1/video](/v1/video.md#list-videos) | Get list of videos |
+| [GET /v1/video/:videoID](/v1/video.md#get-video) | Get details of a video |
 
-## `GET /v1/capture`
+## `GET /v1/video`
 
-Returns a list of Capture objects
+Returns a list of Video objects
 
 ### Parameters
 
@@ -37,13 +37,13 @@ Returns a list of Capture objects
             <td><code>ts_start</code></td>
             <td>optional</td>
             <td>number</td>
-            <td>Timestamp in milliseconds. When this param is included in the request, only captures taken <b>after</b> this timestamp will be included in the result.</td>
+            <td>Timestamp in milliseconds. When this param is included in the request, only videos taken <b>after</b> this timestamp will be included in the result.</td>
         </tr>
         <tr>
             <td><code>ts_end</code></td>
             <td>optional</td>
             <td>number</td>
-            <td>Timestamp in milliseconds. When this param is included in the request, only captures taken <b>before</b> this timestamp will be included in the result.</td>
+            <td>Timestamp in milliseconds. When this param is included in the request, only videos taken <b>before</b> this timestamp will be included in the result.</td>
         </tr>
         <tr>
             <td><code>limit</code></td>
@@ -61,7 +61,7 @@ Returns a list of Capture objects
             <td><code>views_min</code></td>
             <td>optional</td>
             <td>number</td>
-            <td>Minimum number of views needed for a capture to be included in the result. Defaults to 0.</td>
+            <td>Minimum number of views needed for a video to be included in the result. Defaults to 0.</td>
         </tr>
     </tbody>
 </table>
@@ -70,7 +70,7 @@ Returns a list of Capture objects
 
 ```bash
 curl -H 'Accept: application/json' \
--X GET https://api.livecap.tv/v1/capture?platform=twitch&channel=riotgames
+-X GET https://api.livecap.tv/v1/video?platform=twitch&channel=riotgames
 ```
 
 ### Example Response
@@ -111,9 +111,9 @@ curl -H 'Accept: application/json' \
 ]   
 ```
 
-## `GET /v1/capture/:captureID`
+## `GET /v1/video/:videoID`
 
-Get details of a Capture object
+Get details of a Video object
 
 ### Parameters
 
@@ -128,10 +128,10 @@ Get details of a Capture object
     </thead>
     <tbody>
         <tr>
-            <td><code>captureID</code></td>
+            <td><code>videoID</code></td>
             <td>required</td>
             <td>string</td>
-            <td>ID if the Capture object</td>
+            <td>ID if the Video object</td>
         </tr>
     </tbody>
 </table>
@@ -140,7 +140,7 @@ Get details of a Capture object
 
 ```bash
 curl -H 'Accept: application/json' \
--X GET https://api.livecap.tv/v1/capture/uLMjA0PqyDe
+-X GET https://api.livecap.tv/v1/video/uLMjA0PqyDe
 ```
 
 ### Example Response
