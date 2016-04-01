@@ -80,9 +80,9 @@ curl -XPOST -i -H 'Accept: application/json'\
 }
 ```
 
-## `POST /v1/stream/capture`
+## `POST /v1/stream/cap`
 
-Take capture of a live stream
+Cap a live stream
 
 ### Parameters
 
@@ -117,7 +117,7 @@ Take capture of a live stream
 curl -XPOST -i -H 'Accept: application/json'\
 -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
 -d "platform=twitch&channel=riotgames" \
-'https://api.livecap.tv/v1/stream/capture' 
+'https://api.livecap.tv/v1/stream/cap' 
 ```
 
 ### Example Response (Request succeeded)
