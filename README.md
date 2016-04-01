@@ -21,14 +21,14 @@ This token should be sent as HTTP Request header or in query string.
 ```
 curl -i -H 'Accept: application/json'\
 -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
-'https://api.livecap.tv/v1/captures' 
+'https://api.livecap.tv/v1/video' 
 ```
 
 ### Example - Sending AccessToken in query string
 
 ```
 curl -i -H 'Accept: application/json'\
-'https://api.livecap.tv/v1/captures?token=AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' 
+'https://api.livecap.tv/v1/video?token=AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' 
 ```
 
 Note that all requests to our endpoints should be sent via HTTPS to avoid token leaks.

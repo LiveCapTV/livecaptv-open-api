@@ -1,4 +1,4 @@
-# Take Captures of Live Streams
+# Capping Live Streams
 
 | Endpoint | Description |
 | ---- | --------------- |
