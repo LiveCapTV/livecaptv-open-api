@@ -13,8 +13,7 @@ https://api.livecap.tv/v1/ (Still under development. Not published yet.)
 
 ## Authentication
 
-Before using our API, you must [create an application][] and [generate an access token] on [LiveCapTV Developer Website][].
-This token should be sent as HTTP Request header or in query string.
+Before using our API, you must [register an application][] and generate your API token in our system. This token should be sent as HTTP Request header or in query string.
 
 ### Example - Sending AccessToken as HTTP Request header
 
@@ -33,9 +32,7 @@ curl -i -H 'Accept: application/json'\
 
 Note that all requests to our endpoints should be sent via HTTPS to avoid token leaks.
 
-[create an application]: https://developer.livecap.tv/faq/creating-application
-[generate an access token]: https://developer.livecap.tv/faq/generating-access-token
-[LiveCapTV Developer Website]: https://developer.livecap.tv
+[register an application]: /v1/trial.md#register
 
 ## API Index
 
