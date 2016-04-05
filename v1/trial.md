@@ -1,6 +1,6 @@
 # Getting API tokens
 
-We are planning to automate APP registration by setting up a developers' website. However this website is still under construction. As of now, please send an email to us to apply for an application token.
+We are planning to automate APP registration by setting up a developers' website. However this website is still under construction. As of now, please [send email to us][] to apply for an application token.
 
 Your email should include:
 
