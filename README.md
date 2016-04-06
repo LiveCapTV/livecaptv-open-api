@@ -48,7 +48,7 @@ Note that all requests to our endpoints should be sent via HTTPS to avoid token 
 | Endpoint | Description |
 | ---- | --------------- |
 | [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for capping a live stream |
-| [POST /v1/stream/cap](/v1/stream.md#cap) | Cap of a live stream |
+| [POST /v1/stream/cap](/v1/stream.md#cap) | Take capture of a live stream |
 
 ## Limitations
 
