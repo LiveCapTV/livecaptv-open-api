@@ -40,7 +40,7 @@ Note that all requests to our endpoints should be sent via HTTPS to avoid token 
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /v1/video](/v1/video.md#list-videos) | Get list of videos |
+| [GET /v1/video/list](/v1/video.md#list-videos) | Get list of videos |
 | [GET /v1/video/:videoID](/v1/video.md#get-video) | Get details of a video |
 
 ### [Cap Live Streams](/v1/stream.md)

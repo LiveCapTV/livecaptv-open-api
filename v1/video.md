@@ -2,10 +2,10 @@
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /v1/video](/v1/video.md#list-videos) | Get list of videos |
+| [GET /v1/video/list](/v1/video.md#list-videos) | Get list of videos |
 | [GET /v1/video/:videoID](/v1/video.md#get-video) | Get details of a video |
 
-## `GET /v1/video`
+## `GET /v1/video/list`
 
 Returns a list of Video objects
 
