@@ -20,14 +20,14 @@ Before using our API, you must [register an application][] and generate your API
 ```
 curl -i -H 'Accept: application/json'\
 -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
-'https://api.livecap.tv/v1/video' 
+-XGET 'https://api.livecap.tv/v1/video/list' 
 ```
 
 ### Example - Sending AccessToken in query string
 
 ```
 curl -i -H 'Accept: application/json'\
-'https://api.livecap.tv/v1/video?token=AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' 
+-XGET 'https://api.livecap.tv/v1/video/list?token=AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' 
 ```
 
 Note that all requests to our endpoints should be sent via HTTPS to avoid token leaks.

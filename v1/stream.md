@@ -3,7 +3,7 @@
 | Endpoint | Description |
 | ---- | --------------- |
 | [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for capping of a live stream |
-| [POST /v1/stream/cap](/v1/stream.md#cap) | Capa live stream |
+| [POST /v1/stream/cap](/v1/stream.md#cap) | Cap a live stream |
 
 ## `POST /v1/stream/ping`
 
