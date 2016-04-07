@@ -9,7 +9,7 @@ The LiveCapTV API enables you to develop your own applications using the rich fe
 
 ## API Endpoint
 
-https://api.livecap.tv/v1/ (Still under development. Not published yet.)
+https://api.livecap.tv/
 
 ## Authentication
 
