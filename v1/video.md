@@ -69,8 +69,7 @@ Returns a list of Video objects
 ### Example Request
 
 ```bash
-curl -H 'Accept: application/json' \
--X GET https://api.livecap.tv/v1/video?platform=twitch&channel=riotgames
+curl -H 'Accept: application/json' -XGET 'https://api.livecap.tv/v1/video?platform=twitch&channel=riotgames'
 ```
 
 ### Example Response
@@ -139,8 +138,7 @@ Get details of a Video object
 ### Example Request
 
 ```bash
-curl -H 'Accept: application/json' \
--X GET https://api.livecap.tv/v1/video/uLMjA0PqyDe
+curl -H 'Accept: application/json' -XGET 'https://api.livecap.tv/v1/video/uLMjA0PqyDe'
 ```
 
 ### Example Response

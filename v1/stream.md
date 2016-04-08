@@ -5,6 +5,13 @@
 | [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for capping of a live stream |
 | [POST /v1/stream/cap](/v1/stream.md#cap) | Cap a live stream |
 
+Recommended workflow for capping a live stream:
+
+- Keep sending PING requests when watching a live stream channel
+- Send CAP requests only when "status" in PING response is "ok"
+- After capping, keep polling video metadata until video status becomes "published"
+- Tell your user the "shareURL" of the video 
+
 ## `POST /v1/stream/ping`
 
 Notify server of getting prepared for capping. If there are no PING requests for a live stream in 5 minutes, capturing resources for this live stream may get recycled.
@@ -52,7 +59,7 @@ Possible server response values include:
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Status of capture service. Choices: <code>ok, not_available</code></td>
+            <td>Status of capture service. Choices: <code>ok</code>, <code>not_available</code><a href="/v1/faq.md" target="_self">(Why?)</a></td>
         </tr>
         <tr>
             <td><code>nextPing</code></td>
@@ -65,10 +72,7 @@ Possible server response values include:
 ### Example Request
 
 ```bash
-curl -XPOST -i -H 'Accept: application/json'\
--H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
--d "platform=twitch&channel=riotgames" \
-'https://api.livecap.tv/v1/stream/ping' 
+curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' -H 'Origin: https://foo.bar' -H 'Content-Type: application/x-www-form-urlencoded' -d 'platform=twitch&channel=riotgames' 'https://api.livecap.tv/v1/stream/ping'
 ```
 
 ### Example Response
@@ -114,10 +118,7 @@ Cap a live stream
 ### Example Request
 
 ```bash
-curl -XPOST -i -H 'Accept: application/json'\
--H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
--d "platform=twitch&channel=riotgames" \
-'https://api.livecap.tv/v1/stream/cap' 
+curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' -H 'Origin: https://foo.bar' -H 'Content-Type: application/x-www-form-urlencoded' -d 'platform=twitch&channel=riotgames' 'https://api.livecap.tv/v1/stream/cap'
 ```
 
 ### Example Response (Request succeeded)
