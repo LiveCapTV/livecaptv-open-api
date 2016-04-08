@@ -58,6 +58,12 @@ Returns a list of Video objects
             <td>Number of records skipped in the result list. Defaults to 0. Typically used in pagination.</td>
         </tr>
         <tr>
+            <td><code>sort</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>Sorting rules. Options: <code>top</code>(order by num_views desc), <code>latest</code>(order by capping time desc). Defaults to <code>latest</code></td>
+        </tr>
+        <tr>
             <td><code>views_min</code></td>
             <td>optional</td>
             <td>number</td>
