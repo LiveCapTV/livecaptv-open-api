@@ -75,7 +75,7 @@ Returns a list of Video objects
 ### Example Request
 
 ```bash
-curl -H 'Accept: application/json' -XGET 'https://api.livecap.tv/v1/video?platform=twitch&channel=riotgames'
+curl -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-2e86b39ab142' -H 'LiveCap-Access-Token: c77ca215-8a83-4888-afe4-06d53034e4c8' -XGET 'https://api.livecap.tv/v1/video?platform=twitch&channel=riotgames'
 ```
 
 ### Example Response
@@ -144,7 +144,7 @@ Get details of a Video object
 ### Example Request
 
 ```bash
-curl -H 'Accept: application/json' -XGET 'https://api.livecap.tv/v1/video/uLMjA0PqyDe'
+curl -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-2e86b39ab142' -H 'LiveCap-Access-Token: c77ca215-8a83-4888-afe4-06d53034e4c8' -XGET 'https://api.livecap.tv/v1/video/uLMjA0PqyDe'
 ```
 
 ### Example Response

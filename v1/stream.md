@@ -72,7 +72,7 @@ Possible server response values include:
 ### Example Request
 
 ```bash
-curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' -H 'Origin: https://foo.bar' -H 'Content-Type: application/x-www-form-urlencoded' -d 'platform=twitch&channel=riotgames' 'https://api.livecap.tv/v1/stream/ping'
+curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-2e86b39ab142' -H 'LiveCap-Access-Token: c77ca215-8a83-4888-afe4-06d53034e4c8' -H 'Origin: https://foo.bar' -H 'Content-Type: application/x-www-form-urlencoded' -d 'platform=twitch&channel=riotgames' 'https://api.livecap.tv/v1/stream/ping'
 ```
 
 ### Example Response
@@ -118,7 +118,7 @@ Cap a live stream
 ### Example Request
 
 ```bash
-curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' -H 'Origin: https://foo.bar' -H 'Content-Type: application/x-www-form-urlencoded' -d 'platform=twitch&channel=riotgames' 'https://api.livecap.tv/v1/stream/cap'
+curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-2e86b39ab142' -H 'LiveCap-Access-Token: c77ca215-8a83-4888-afe4-06d53034e4c8' -H 'Origin: https://foo.bar' -H 'Content-Type: application/x-www-form-urlencoded' -d 'platform=twitch&channel=riotgames' 'https://api.livecap.tv/v1/stream/cap'
 ```
 
 ### Example Response (Request succeeded)
