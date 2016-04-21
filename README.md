@@ -9,48 +9,43 @@ The LiveCapTV API enables you to develop your own applications using the rich fe
 
 ## API Endpoint
 
-https://api.livecap.tv/v1/ (Still under development. Not published yet.)
+https://api.livecap.tv/
 
 ## Authentication
 
-Before using our API, you must [create an application][] and [generate an access token] on [LiveCapTV Developer Website][].
-This token should be sent as HTTP Request header or in query string.
+Before using our API, you must [register an application][] and generate your API token in our system. This token should be sent as HTTP Request header or in query string together with the application ID.
 
-### Example - Sending AccessToken as HTTP Request header
-
-```
-curl -i -H 'Accept: application/json'\
--H 'LiveCap-Access-Token: AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u'\
-'https://api.livecap.tv/v1/captures' 
-```
-
-### Example - Sending AccessToken in query string
+### Example - Sending ApplicationID and AccessToken as HTTP Request header
 
 ```
-curl -i -H 'Accept: application/json'\
-'https://api.livecap.tv/v1/captures?token=AoBXBCqC4wVFgMHUaUeY86oPnUMrMnM4u' 
+curl -i -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-2e86b39ab142' -H 'LiveCap-Access-Token: c77ca215-8a83-4888-afe4-06d53034e4c8' -H 'Origin: https://foo.bar' -XGET 'https://api.livecap.tv/v1/video/list'
+```
+
+### Example - Sending ApplicationID and AccessToken in query string
+
+```
+curl -i -H 'Accept: application/json' -H 'Origin: https://foo.bar' -XGET 'https://api.livecap.tv/v1/video/list?appid=be85d651-95f3-4d2d-b587-2e86b39ab142&token=c77ca215-8a83-4888-afe4-06d53034e4c8'
 ```
 
 Note that all requests to our endpoints should be sent via HTTPS to avoid token leaks.
 
-[create an application]: https://developer.livecap.tv/faq/creating-application
-[generate an access token]: https://developer.livecap.tv/faq/generating-access-token
-[LiveCapTV Developer Website]: https://developer.livecap.tv
+[register an application]: /v1/trial.md#register
 
 ## API Index
 
-### [Captures](/v1/capture.md)
+### [Query Videos Data](/v1/video.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /captures](/v1/capture.md#list-captures) | Get list of captures |
+| [GET /v1/video/list](/v1/video.md#list-videos) | Get list of videos |
+| [GET /v1/video/:videoID](/v1/video.md#get-video) | Get details of a video |
 
-### [Channels](/v1/channel.md)
+### [Cap Live Streams](/v1/stream.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /channel/ping](/v1/channel.md#ping) | Prepare server for capturing a stream |
-| [POST /channel/capture](/v1/channel.md#capture) | Take capture of a live stream |
+| [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for capping a live stream |
+| [POST /v1/stream/cap](/v1/stream.md#cap) | Take capture of a live stream |
 
 ## Limitations
 
