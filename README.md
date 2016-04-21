@@ -47,6 +47,13 @@ Note that all requests to our endpoints should be sent via HTTPS to avoid token 
 | [POST /v1/stream/ping](/v1/stream.md#ping) | Prepare server for capping a live stream |
 | [POST /v1/stream/cap](/v1/stream.md#cap) | Take capture of a live stream |
 
+### [Cap VODs](/v1/vod.md)
+
+| Endpoint | Description |
+| ---- | --------------- |
+| [POST /v1/vod/cap](/v1/vod.md#cap) | Take capture of a VOD |
+
+
 ## Limitations
 
 To avoid abusing our API, rates of requests are limited on a daily basis.
