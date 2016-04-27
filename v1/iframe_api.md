@@ -28,23 +28,22 @@ After the API's JavaScript code loads, the API will call the `onLiveCapIframeAPI
 
 The constructor for the video player specifies the following parameters:
 
-1. The first parameter specifies either the DOM element or the `id` of the HTML element where the API will insert the `<iframe>` tag containing the player.
+- The first parameter specifies either the DOM element or the `id` of the HTML element where the API will insert the `<iframe>` tag containing the player. The IFrame API will replace the specified element with the `<iframe>` element containing the player. This could affect the layout of your page if the element being replaced has a different display style than the inserted `<iframe>` element. By default, an `<iframe>` displays as an inline-block element.
+- The second parameter is an object that specifies player options.
+  
+  - The object contains the following properties:
 
-The IFrame API will replace the specified element with the `<iframe>` element containing the player. This could affect the layout of your page if the element being replaced has a different display style than the inserted `<iframe>` element. By default, an `<iframe>` displays as an inline-block element.
+	  - `width` (number) – The width of the video player. The default value is `640`.
+	  - `height` (number) – The height of the video player. The default value is `390`.
+	  - `videoId` (string) – The LiveCap video ID that identifies the video that the player will load.
+	  - `playerVars` (object) – The object's properties identify [player parameters](/v1/player.md) that can be used to customize the player.
+	  - `events` (object) – The object's properties identify the events that the API fires and the functions (event listeners) that the API will call when those events occur. In the example, the constructor indicates that the `onPlayerReady` function will execute when the `onReady` event fires and that the `onPlayerStateChange` function will execute when the `onStateChange` event fires.
 
-2. The second parameter is an object that specifies player options. The object contains the following properties:
+  - As mentioned in the [Embedded Player](/v1/player.md) section, instead of writing an empty `<div>` element on your page, which the player API's JavaScript code will then replace with an `<iframe>` element, you could create the `<iframe>` tag yourself.
 
-  - `width` (number) – The width of the video player. The default value is `640`.
-  - `height` (number) – The height of the video player. The default value is `390`.
-  - `videoId` (string) – The LiveCap video ID that identifies the video that the player will load.
-  - `playerVars` (object) – The object's properties identify [player parameters](/v1/player.md) that can be used to customize the player.
-  - `events` (object) – The object's properties identify the events that the API fires and the functions (event listeners) that the API will call when those events occur. In the example, the constructor indicates that the `onPlayerReady` function will execute when the `onReady` event fires and that the `onPlayerStateChange` function will execute when the `onStateChange` event fires.
+      <iframe src="https://www.livecap.tv/s/embed/riotgames/uLMjA0PqyDe?autoplay=1" width="640" height="360" frameborder="0"></iframe>
 
-As mentioned in the [Embedded Player](/v1/player.md) section, instead of writing an empty `<div>` element on your page, which the player API's JavaScript code will then replace with an `<iframe>` element, you could create the `<iframe>` tag yourself.
-
-	<iframe src="https://www.livecap.tv/s/embed/riotgames/uLMjA0PqyDe?autoplay=1" width="640" height="360" frameborder="0"></iframe>
-
-If you do write the `<iframe>` tag, then when you construct the `LiveCap.Player` object, you do not need to specify values for the width and height, which are specified as attributes of the `<iframe>` tag, or the `videoId` and player parameters, which are are specified in the src URL. As an extra security measure, you should also include the `origin` parameter to the URL, specifying the URL scheme (http:// or https://) and full domain of your host page as the parameter value. While `origin` is optional, including it protects against malicious third-party JavaScript being injected into your page and hijacking control of your LiveCap player.
+  - If you do write the `<iframe>` tag, then when you construct the `LiveCap.Player` object, you do not need to specify values for the width and height, which are specified as attributes of the `<iframe>` tag, or the `videoId` and player parameters, which are are specified in the src URL. As an extra security measure, you should also include the `origin` parameter to the URL, specifying the URL scheme (http:// or https://) and full domain of your host page as the parameter value. While `origin` is optional, including it protects against malicious third-party JavaScript being injected into your page and hijacking control of your LiveCap player.
 
 ## Operations
 
