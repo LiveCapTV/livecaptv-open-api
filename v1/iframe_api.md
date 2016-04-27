@@ -28,7 +28,10 @@ After the API's JavaScript code loads, the API will call the `onLiveCapIframeAPI
 
 The constructor for the video player specifies the following parameters:
 
-- The first parameter specifies either the DOM element or the `id` of the HTML element where the API will insert the `<iframe>` tag containing the player. The IFrame API will replace the specified element with the `<iframe>` element containing the player. This could affect the layout of your page if the element being replaced has a different display style than the inserted `<iframe>` element. By default, an `<iframe>` displays as an inline-block element.
+- The first parameter specifies either the DOM element or the `id` of the HTML element where the API will insert the `<iframe>` tag containing the player.
+
+  - The IFrame API will replace the specified element with the `<iframe>` element containing the player. This could affect the layout of your page if the element being replaced has a different display style than the inserted `<iframe>` element. By default, an `<iframe>` displays as an inline-block element.
+  
 - The second parameter is an object that specifies player options.
   
   - The object contains the following properties:
