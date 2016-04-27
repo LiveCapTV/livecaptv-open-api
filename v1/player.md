@@ -2,8 +2,8 @@
 
 ## URL Convention
 
-http(s)://www.livecap.tv/s/embed/{video_id}
-http(s)://www.livecap.tv/s/embed/{streamer_name}/{video_id}
+- http(s)://www.livecap.tv/s/embed/{video_id}
+- http(s)://www.livecap.tv/s/embed/{streamer_name}/{video_id}
 
 ## Embed a player using an `<iframe>` tag
 
