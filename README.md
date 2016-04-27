@@ -53,6 +53,9 @@ Note that all requests to our endpoints should be sent via HTTPS to avoid token 
 | ---- | --------------- |
 | [POST /v1/vod/cap](/v1/vod.md#cap) | Take capture of a VOD |
 
+## Other Utilities
+
+[LiveCapTV Embedded Player](/v1/player.md)
 
 ## Limitations
 
