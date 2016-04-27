@@ -1,5 +1,9 @@
 # LiveCapTV iFrame API
 
+## Regards
+
+The design of LiveCapTV iFrame API strongly resembles [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) because we want to provide developers with a similar experience like using YouTube Embedded Player APIs.
+
 ## Getting Started
 
 ## Loading a video player
