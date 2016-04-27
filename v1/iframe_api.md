@@ -31,7 +31,7 @@ The constructor for the video player specifies the following parameters:
 - The first parameter specifies either the DOM element or the `id` of the HTML element where the API will insert the `<iframe>` tag containing the player.
 
   - The IFrame API will replace the specified element with the `<iframe>` element containing the player. This could affect the layout of your page if the element being replaced has a different display style than the inserted `<iframe>` element. By default, an `<iframe>` displays as an inline-block element.
-  
+
 - The second parameter is an object that specifies player options.
   
   - The object contains the following properties:
@@ -104,7 +104,7 @@ To call the player API methods, you must first get a reference to the player obj
   	- 3 – buffering
   	- 5 - cued
 
- - `player.getCurrentTime():Number`
+- `player.getCurrentTime():Number`
 
    - Returns the elapsed time in seconds since the video started playing.
 
