@@ -75,7 +75,8 @@ curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3
         "author":{  
           "name":"tlyee",
           "displayName":"tlyee",
-          "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg"
+          "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg",
+          "twitchAccountName":"tlyee"
         },
         "video": {
 
