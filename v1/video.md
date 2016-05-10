@@ -93,7 +93,8 @@ curl -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-
         "author":{  
           "name":"tlyee",
           "displayName":"tlyee",
-          "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg"
+          "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg",
+          "twitchAccountName":"tlyee"
         },
         "video": {
             "high": "http://d1qugqs02rnrk6.cloudfront.net/f1fad403-f7f0-4cee-83a5-80f2a6446c84.mp4",
@@ -161,7 +162,8 @@ curl -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-
     "author":{  
       "name":"tlyee",
       "displayName":"tlyee",
-      "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg"
+      "avatarURL":"http://dxm2idf2u6bml.cloudfront.net/public/images/profile.jpg",
+      "twitchAccountName":"tlyee"
     },
     "video": {
         "high": "http://d1qugqs02rnrk6.cloudfront.net/f1fad403-f7f0-4cee-83a5-80f2a6446c84.mp4",
