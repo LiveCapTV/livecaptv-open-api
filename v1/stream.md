@@ -116,7 +116,7 @@ Cap a live stream
             <td><code>offset</code></td>
             <td>optional</td>
             <td>string</td>
-            <td>Number of seconds the captured moment differs from where the live stream is now at. If this parameter is set to <code>none</code>, then the latest <b>60</b> seconds of live stream are captured. For almost all times this value is <b>negative</b> because the it takes time for the client to download and play the latest video segment. If you would like to inject your code on Twitch playback page, you could refer to <a href="/v1/twitch_player_offset.md" target="_self">this document</a> for telling how much the client is falling behind the up-to-date live stream. Default: <code>none</code></td>
+            <td>Number of seconds the captured moment differs from where the live stream is now at. If this parameter is set to <code>none</code>, then the latest <b>60</b> seconds of live stream are captured. For almost all times this value is <b>negative</b> because it takes time for the client to download and play the latest video segment. If you would like to inject your code on Twitch playback page, you could refer to <a href="/v1/twitch_player_offset.md" target="_self">this document</a> for telling how much the client is falling behind the up-to-date live stream. Default: <code>none</code></td>
         </tr>
     </tbody>
 </table>
