@@ -47,7 +47,7 @@ Note that you could append player parameters directly to the end of the URL. Fol
         </tr>
         <tr>
             <td><code>enable_chats</code></td>
-            <td>If set to 1, users will be able to see Twitch reactions in the embedded player. Defaults to 0 (Hide)</td>
+            <td>If set to 1, users will be able to see Twitch reactions in the embedded player. Defaults to 0 (Disabled)</td>
         </tr>
         <tr>
             <td><code>show_chats</code></td>
