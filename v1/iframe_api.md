@@ -132,6 +132,20 @@ To call the player API methods, you must first get a reference to the player obj
 
   - Removes a listener function for the specified `event`. The listener is a string that identifies the function that will no longer execute when the specified event fires.
 
+### Controlling Twitch Reactions
+
+- `player.isShowingTwitchChats():Boolean`
+
+  - Returns whether Twitch reactions are showing in the embedded player
+
+- `player.showTwitchChats():void`
+
+  - Show Twitch reactions in the embedded player
+
+- `player.hideTwitchChats():void`
+
+  - Hide Twitch reactions in the embedded player
+
 ## Events
 
 The API fires events to notify your application of changes to the embedded player. As noted in the previous section, you can subscribe to events by adding an event listener when constructing the LiveCap.Player object, and you can also use the addEventListener function.

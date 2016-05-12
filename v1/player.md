@@ -37,5 +37,25 @@ Note that you could append player parameters directly to the end of the URL. Fol
             <td><code>t</code></td>
             <td>This parameter causes the player to begin playing the video at the given number of seconds from the start of the video. The parameter value is a positive integer.</td>
         </tr>
+        <tr>
+            <td><code>show_player_controls</code></td>
+            <td>If set to 0, the controls of video player will be hidden. Defaults to 1 (Show)</td>
+        </tr>
+        <tr>
+            <td><code>show_share_controls</code></td>
+            <td>If set to 0, the buttons of sharing will be hidden. Defaults to 1 (Show)</td>
+        </tr>
+        <tr>
+            <td><code>enable_chats</code></td>
+            <td>If set to 1, users will be able to see Twitch reactions in the embedded player. Defaults to 0 (Disabled)</td>
+        </tr>
+        <tr>
+            <td><code>show_chats</code></td>
+            <td>If set to 1, the Twitch reactions panel will be at expanded state when player starts up. This parameter will not take effect if <code>enable_chats</code> is set to 0. Defaults to 0 (Collapsed)</td>
+        </tr>
+        <tr>
+            <td><code>show_chat_controls</code></td>
+            <td>If set to 0, the bar which controls whether Twitch reactions panel gets expanded will be hidden. This parameter will not take effect if <code>enable_chats</code> is set to 0. Defaults to 1 (Show)</td>
+        </tr>
     </tbody>
 </table>
