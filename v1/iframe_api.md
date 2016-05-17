@@ -4,11 +4,18 @@
 
 The design of LiveCapTV iFrame API strongly resembles [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) because we want to provide developers with a similar experience like using YouTube Embedded Player APIs.
 
-## Getting Started
+## Loading IFrame Player API code
 
-## Adding API's JavaScript Code into the page
+You can simply insert a script tag into the HTML code to load the latest iFrame API. Sample code shows below:
 
-  <script type="text/javascript" src="//www.livecap.tv/iframe_api"></script>
+    <script type="text/javascript" src="//www.livecap.tv/iframe_api"></script>
+
+Or, you can load the script dynamically using JavaScript. Sample code shows below:
+
+    var tag = document.createElement('script');
+    tag.src = "//www.livecap.tv/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 ## Loading a video player
 
