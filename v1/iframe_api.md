@@ -6,6 +6,10 @@ The design of LiveCapTV iFrame API strongly resembles [YouTube iFrame API](https
 
 ## Getting Started
 
+## Adding API's JavaScript Code into the page
+
+  <script type="text/javascript" src="//www.livecap.tv/iframe_api"></script>
+
 ## Loading a video player
 
 After the API's JavaScript code loads, the API will call the `onLiveCapIframeAPIReady` function, at which point you can construct a LiveCap.Player object to insert a video player on your page. Example shows below:
