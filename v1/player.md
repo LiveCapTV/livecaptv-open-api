@@ -39,7 +39,7 @@ Note that you could append player parameters directly to the end of the URL. Fol
         </tr>
         <tr>
             <td><code>show_player_controls</code></td>
-            <td>If set to 0, the controls of video player will be hidden. Defaults to 1 (Show)</td>
+            <td>If set to 0, the controls of video player will be hidden. Note that if the width is less than 700px, the controls will show regardless of this parameter for better mobile page UX. Defaults to 1 (Show)</td>
         </tr>
         <tr>
             <td><code>show_share_controls</code></td>
