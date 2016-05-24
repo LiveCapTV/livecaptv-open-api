@@ -57,5 +57,9 @@ Note that you could append player parameters directly to the end of the URL. Fol
             <td><code>show_chat_controls</code></td>
             <td>If set to 0, the bar which controls whether Twitch reactions panel gets expanded will be hidden. This parameter will not take effect if <code>enable_chats</code> is set to 0. Defaults to 1 (Show)</td>
         </tr>
+        <tr>
+            <td><code>show_metadata</code></td>
+            <td>If set to 0, video metadata on top of overlay will be hidden. Defaults to 1 (Show)</td>
+        </tr>
     </tbody>
 </table>
