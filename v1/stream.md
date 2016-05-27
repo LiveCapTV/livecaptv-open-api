@@ -38,7 +38,7 @@ Notify server of getting prepared for capping. If there are no PING requests for
             <td><code>channel</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Name of live stream channel. For Twitch channels, this string would be the same as in <code>https://twitch.tv/***</code></td>
+            <td>Name of live stream channel. For Twitch channels, this string would be the <code>***</code> as in <code>https://twitch.tv/***</code></td>
         </tr>
     </tbody>
 </table>
@@ -110,7 +110,7 @@ Cap a live stream
             <td><code>channel</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Name of live stream channel. For Twitch channels, this string would be the same as in <code>https://twitch.tv/***</code></td>
+            <td>Name of live stream channel. For Twitch channels, this string would be the <code>***</code> as in <code>https://twitch.tv/***</code></td>
         </tr>
         <tr>
             <td><code>offset</code></td>

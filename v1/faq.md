@@ -14,3 +14,7 @@ There may be many reasons why capping resources are not ready, including:
 - Too much smog in Beijing
 
 We are constantly monitoring on number of simulators needed. We will prepare more resources accordingly.
+
+## Why do some Twitch VOD capture requests fail?
+
+Please make sure that accessing VOD is not restricted by channel subscribers only. We cannot get the VOD data when guest access is restricted.
