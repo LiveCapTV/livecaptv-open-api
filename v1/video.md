@@ -31,7 +31,13 @@ Returns a list of Video objects
             <td><code>channel</code></td>
             <td>optional</td>
             <td>string</td>
-            <td>Name of live stream channel. Should be used together with <code>platform</code> parameter. For Twitch channels, this string would be the same as in <code>https://twitch.tv/***</code></td>
+            <td>Name of live stream channel. If this field is given, only videos that belong to the given channel will be included in the result. Should be used together with <code>platform</code> parameter. For Twitch channels, this string would be the same as in <code>https://twitch.tv/***</code></td>
+        </tr>
+        <tr>
+            <td><code>game</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>Name of game. If this field is given, only videos of the given game will be included in the result. Examples are <code>League of Legends</code>, <code>Dota 2</code></td>
         </tr>
         <tr>
             <td><code>ts_start</code></td>
