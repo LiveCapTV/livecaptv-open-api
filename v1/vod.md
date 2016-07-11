@@ -72,6 +72,7 @@ curl -i -XPOST  -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3
         "views":0,
         "upvotes":0,
         "shareURL":"http://www.livecap.tv/t/riotgames/uLMjA0PqyDe",
+        "duration":60,
         "author":{  
           "name":"tlyee",
           "displayName":"tlyee",
