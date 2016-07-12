@@ -96,6 +96,7 @@ curl -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-
         "views":54689,
         "upvotes":2,
         "shareURL":"http://www.livecap.tv/t/riotgames/uLMjA0PqyDe",
+        "duration":60,
         "author":{  
           "name":"tlyee",
           "displayName":"tlyee",
@@ -165,6 +166,7 @@ curl -H 'Accept: application/json' -H 'LiveCap-App-Key: be85d651-95f3-4d2d-b587-
     "views":54689,
     "upvotes":2,
     "shareURL":"http://www.livecap.tv/t/riotgames/uLMjA0PqyDe",
+    "duration":60,
     "author":{  
       "name":"tlyee",
       "displayName":"tlyee",
